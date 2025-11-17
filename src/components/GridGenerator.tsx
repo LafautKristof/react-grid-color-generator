@@ -7,17 +7,14 @@ import { InfoPopup } from "./InfoPopUp";
 import { CiCircleInfo } from "react-icons/ci";
 
 export default function GridGenerator() {
-    // Inputs (mogen tijdelijk leeg zijn)
     const [columnsInput, setColumnsInput] = useState<number | "">("");
     const [rowsInput, setRowsInput] = useState<number | "">("");
     const [colorCountInput, setColorCountInput] = useState<number | "">("");
 
-    // Echte grid parameters (altijd numbers)
     const [columns, setColumns] = useState<number>(1);
     const [rows, setRows] = useState<number>(1);
     const [_colorCount, setColorCount] = useState<number>(1);
 
-    // Grid data
     const [gridColors, setGridColors] = useState<string[]>([]);
     const [colorStats, setColorStats] = useState<Record<string, number>>({});
 
@@ -53,7 +50,7 @@ export default function GridGenerator() {
                             alignItems: "center",
                         }}
                     >
-                        <h2>Grid Generator</h2>
+                        <h2>Grid Color Generator</h2>
                         <a
                             href="#"
                             onClick={(e) => {
