@@ -7,8 +7,6 @@ export default function Grid({
     rows: number;
     gridColors: string[];
 }) {
-    console.log("👉 gridColors length:", gridColors.length);
-    console.log("👉 expected:", columns * rows);
     return (
         <div
             style={{
@@ -16,7 +14,7 @@ export default function Grid({
                 width: "100%",
                 height: "100%",
                 gridTemplateColumns: `repeat(${columns}, 1fr)`,
-                gridTemplateRows: `repeat(${rows}, 1fr)`, // ← rijen scale automatisch
+                gridTemplateRows: `repeat(${rows}, 1fr)`,
                 gap: "2px",
             }}
         >
@@ -26,7 +24,7 @@ export default function Grid({
                     style={{
                         backgroundColor: color,
                         width: "100%",
-                        height: "100%", // cel vult automatisch toegewezen rij-hoogte
+                        height: "100%",
                     }}
                 />
             ))}

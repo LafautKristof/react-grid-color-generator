@@ -23,10 +23,10 @@ export function InfoPopup({ onClose }: { onClose: () => void }) {
                     textAlign: "center",
                 }}
             >
-                <h3>Welkom!</h3>
+                <h3>Welcome!</h3>
                 <p>
-                    Vul het aantal kolommen, rijen en kleuren in om een grid te
-                    genereren.
+                    Enter the number of columns, rows, and colors to generate a
+                    grid.
                 </p>
 
                 <button
@@ -40,7 +40,7 @@ export function InfoPopup({ onClose }: { onClose: () => void }) {
                         border: "none",
                     }}
                 >
-                    Oké, duidelijk!
+                    Okay, got it!
                 </button>
             </div>
         </div>
